@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kogi State Bursary Information Portal | Official Student Guide</title>
+  <meta name="description" content="Official information portal for Kogi State Scholarship and Bursary Board (KSSB). Discover undergraduate, medical, and law school bursary grants under Gov. Ahmed Usman Ododo.">
+  <link rel="icon" type="image/svg+xml" href="assets/kogi-logo.svg">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Official Government Announcement Bar & Live Ticker -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="ticker-wrap">
+        <span class="ticker-badge"><i class="fas fa-bullhorn"></i> Official Notice</span>
+        <div class="ticker-content">
+          <span>Gov. Ahmed Usman Ododo approves payment of Bursary for Kogi State tertiary students &amp; ₦300,000 for Law School candidates across all 21 LGAs! Portal registration is 100% Free!</span>
+        </div>
+      </div>
+      <div class="top-bar-links">
+        <a href="tel:07042446483" class="top-bar-link"><i class="fas fa-phone-alt"></i> Help Desk: 07042446483</a>
+        <span style="opacity:0.4;">|</span>
+        <a href="https://scholarshipboard.kogistate.gov.ng" target="_blank" rel="noopener" class="top-bar-link">
+          <i class="fas fa-external-link-alt"></i> Official State Portal
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Glassmorphic Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" id="homeBrandLink">
+        <img src="assets/kogi-logo.svg" alt="Kogi State Scholarship Board Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">KOGI STATE BURSARY</span>
+          <span class="brand-subtitle">Scholarship &amp; Grants Information Portal</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="schemes.html" class="nav-link"><i class="fas fa-graduation-cap"></i> Bursary Schemes</a></li>
+          <li><a href="application-guide.html" class="nav-link"><i class="fas fa-clipboard-check"></i> Application Guide</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fas fa-headset"></i> Contact &amp; Support</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions & Theme Toggle -->
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="https://scholarshipboard.kogistate.gov.ng" target="_blank" rel="noopener" class="portal-btn" id="applyPortalBtn">
+          <span>Official Portal</span> <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+        <button id="mobileNavToggle" class="mobile-toggle-btn" aria-label="Open Navigation Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Text Content -->
+          <div class="hero-content reveal">
+            <div class="hero-pill">
+              <span class="hero-pill-dot"></span>
+              <span>Kogi State Student Empowerment Initiative</span>
+            </div>
+            <h1 class="hero-title">
+              Empowering Minds, <br>
+              <span class="text-gradient">Fueling Academic Excellence</span>
+            </h1>
+            <p class="hero-lead">
+              Welcome to the official information hub for the <strong>Kogi State Scholarship and Bursary Board (KSSB)</strong>. Dedicated to championing higher education through prompt financial grants and bursary support for every qualified Kogi indigene nationwide.
+            </p>
+            <div class="hero-actions">
+              <a href="#quickChecker" class="btn btn-primary" id="btnCheckEligibility">
+                <i class="fas fa-calculator"></i> Check Your Eligibility
+              </a>
+              <a href="schemes.html" class="btn btn-secondary" id="btnExploreSchemes">
+                <i class="fas fa-layer-group"></i> Explore Bursary Schemes
+              </a>
+            </div>
+
+            <!-- Highlights Checklist -->
+            <div style="display:flex; flex-wrap:wrap; gap:1.25rem; font-size:0.9rem; color:var(--text-muted);">
+              <span><i class="fas fa-shield-alt" style="color:var(--primary);"></i> 100% Free Application</span>
+              <span><i class="fas fa-landmark" style="color:var(--primary);"></i> 21 LGAs Covered</span>
+              <span><i class="fas fa-bolt" style="color:var(--primary);"></i> Direct Bank Disbursement</span>
+            </div>
+          </div>
+
+          <!-- Hero Media & Graphic -->
+          <div class="hero-card-media reveal">
+            <div class="hero-image-wrap">
+              <img src="assets/kogi-hero.jpg" alt="Kogi State University Students celebrating bursary grant" class="hero-image">
+            </div>
+
+            <!-- Floating Card 1: Law School Grant -->
+            <div class="hero-floating-grant">
+              <div style="width:38px; height:38px; border-radius:50%; background:var(--secondary-gold); display:flex; align-items:center; justify-content:center; color:#000;">
+                <i class="fas fa-scale-balanced"></i>
+              </div>
+              <div>
+                <div style="font-size:0.75rem; text-transform:uppercase; font-weight:800; color:var(--text-muted);">Law School Grant</div>
+                <div style="font-family:'Outfit', sans-serif; font-size:1.15rem; font-weight:800; color:var(--primary);">₦300,000 / Student</div>
+              </div>
+            </div>
+
+            <!-- Floating Card 2: Beneficiary Stats -->
+            <div class="hero-floating-card">
+              <div class="floating-icon">
+                <i class="fas fa-user-graduate"></i>
+              </div>
+              <div>
+                <div class="floating-title">Students Benefited</div>
+                <div class="floating-value">15,000+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE STATS COUNTER BAR -->
+    <section class="container">
+      <div class="stats-section reveal">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-target="21" data-prefix="" data-suffix=" LGAs">21 LGAs</div>
+            <div class="stat-label">Local Government Areas Covered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="300" data-prefix="₦" data-suffix=",000">₦300,000</div>
+            <div class="stat-label">Special Law School Grant</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="30" data-prefix="₦" data-suffix=",000">₦30,000</div>
+            <div class="stat-label">Undergraduate / HND Bursary</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="100" data-prefix="" data-suffix="% Free">100% Free</div>
+            <div class="stat-label">Official Online Registration</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE ELIGIBILITY PRE-CHECKER -->
+    <section class="section" id="quickChecker">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Interactive Student Tool</span>
+          <h2 class="section-title">Instant Bursary Eligibility Pre-Checker</h2>
+          <p class="section-desc">Quickly verify your qualification status and find out which bursary award tier applies to your course and institution.</p>
+        </div>
+
+        <div class="checker-card reveal">
+          <form id="eligibilityCheckerForm">
+            <div class="checker-form-grid">
+              <div class="form-group">
+                <label class="form-label" for="checkOrigin"><i class="fas fa-map-marker-alt" style="color:var(--primary);"></i> State of Origin</label>
+                <select id="checkOrigin" class="form-select" required>
+                  <option value="" disabled selected>Select Your State</option>
+                  <option value="kogi">Kogi State (Indigene)</option>
+                  <option value="other">Other State (Non-Indigene)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="checkLga"><i class="fas fa-landmark" style="color:var(--primary);"></i> Local Government Area (LGA)</label>
+                <select id="checkLga" class="form-select" required>
+                  <option value="" disabled selected>Select Kogi LGA</option>
+                  <option value="Adavi">Adavi</option>
+                  <option value="Ajaokuta">Ajaokuta</option>
+                  <option value="Ankpa">Ankpa</option>
+                  <option value="Bassa">Bassa</option>
+                  <option value="Dekina">Dekina</option>
+                  <option value="Ibaji">Ibaji</option>
+                  <option value="Idah">Idah</option>
+                  <option value="Igalamela-Odolu">Igalamela-Odolu</option>
+                  <option value="Ijumu">Ijumu</option>
+                  <option value="Kabba/Bunu">Kabba/Bunu</option>
+                  <option value="Kogi (Koton Karfe)">Kogi (Koton Karfe)</option>
+                  <option value="Lokoja">Lokoja</option>
+                  <option value="Mopa-Muro">Mopa-Muro</option>
+                  <option value="Ofu">Ofu</option>
+                  <option value="Ogori/Magongo">Ogori/Magongo</option>
+                  <option value="Okehi">Okehi</option>
+                  <option value="Okene">Okene</option>
+                  <option value="Olamaboro">Olamaboro</option>
+                  <option value="Omala">Omala</option>
+                  <option value="Yagba East">Yagba East</option>
+                  <option value="Yagba West">Yagba West</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="checkInstType"><i class="fas fa-university" style="color:var(--primary);"></i> Institution Category</label>
+                <select id="checkInstType" class="form-select" required>
+                  <option value="" disabled selected>Select Type</option>
+                  <option value="public">Federal / State Public Institution</option>
+                  <option value="private">Private Institution</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="checkLevel"><i class="fas fa-graduation-cap" style="color:var(--primary);"></i> Academic Category</label>
+                <select id="checkLevel" class="form-select" required>
+                  <option value="" disabled selected>Select Level</option>
+                  <option value="undergraduate">Undergraduate / HND / ND / NCE</option>
+                  <option value="medical">Medical / Clinical Health Students</option>
+                  <option value="law">Nigerian Law School Student</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="margin-top:1.5rem; text-align:center;">
+              <button type="button" id="checkEligibilityBtn" class="btn btn-primary" style="padding:0.9rem 2.5rem;">
+                <i class="fas fa-bolt"></i> Evaluate My Qualification
+              </button>
+            </div>
+          </form>
+
+          <!-- Result Container Output -->
+          <div id="eligibilityResult" class="checker-result-box"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE BURSARY TIERS OVERVIEW -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Financial Support Schemes</span>
+          <h2 class="section-title">2025/2026 Bursary Categories</h2>
+          <p class="section-desc">The Executive Governor of Kogi State, Alhaji Ahmed Usman Ododo, has sanctioned multi-tier financial relief grants across diverse tertiary academic fields.</p>
+        </div>
+
+        <div class="schemes-grid">
+          <!-- Card 1: Regular Undergraduate & Polytechnic -->
+          <div class="scheme-card featured reveal">
+            <span class="badge badge-green scheme-badge">Flagship Scheme</span>
+            <div class="scheme-icon-box">
+              <i class="fas fa-book-open-reader"></i>
+            </div>
+            <h3 class="scheme-title">Undergraduate &amp; HND/ND</h3>
+            <div class="scheme-amount">
+              ₦30,000 <span>/ Session</span>
+            </div>
+            <p class="scheme-desc">
+              Dedicated general bursary assistance for all verified Kogi State indigenes pursuing diploma and degree courses across accredited Nigerian universities and polytechnics.
+            </p>
+            <ul class="scheme-features">
+              <li class="scheme-feature-item"><i class="fas fa-circle-check"></i> Public Universities, Polytechnics &amp; Colleges of Education</li>
+              <li class="scheme-feature-item"><i class="fas fa-circle-check"></i> Fresh and returning students in good standing</li>
+              <li class="scheme-feature-item"><i class="fas fa-circle-check"></i> Direct account credit via verified BVN/NIN</li>
+            </ul>
+            <a href="schemes.html#undergraduate" class="btn btn-secondary" style="width:100%;">View Requirements</a>
+          </div>
+
+          <!-- Card 2: Medical & Clinical Health Grant -->
+          <div class="scheme-card reveal">
+            <span class="badge badge-gold scheme-badge">Health Sector</span>
+            <div class="scheme-icon-box" style="background:#E0F2FE; color:#0284C7;">
+              <i class="fas fa-stethoscope"></i>
+            </div>
+            <h3 class="scheme-title">Medical Students Grant</h3>
+            <div class="scheme-amount">
+              ₦75,000 <span>/ Session</span>
+            </div>
+            <p class="scheme-desc">
+              Tailored financial incentives for Kogi students undergoing intensive medical, surgical, dental, and core clinical training across accredited teaching hospitals.
+            </p>
+            <ul class="scheme-features">
+              <li class="scheme-feature-item"><i class="fas fa-circle-check"></i> MBBS, BDS, Pharmacy &amp; Allied Health sciences</li>
+              <li class="scheme-feature-item"><i class="fas fa-circle-check"></i> Clinical training support stipend</li>
+              <li class="scheme-feature-item"><i class="fas fa-circle-check"></i> Verified medical faculty endorsement</li>
+            </ul>
+            <a href="schemes.html#medical" class="btn btn-secondary" style="width:100%;">View Requirements</a>
+          </div>
+
+          <!-- Card 3: Nigerian Law School Grant -->
+          <div class="scheme-card reveal">
+            <span class="badge badge-gold scheme-badge">Executive Award</span>
+            <div class="scheme-icon-box" style="background:#FEF3C7; color:#B45309;">
+              <i class="fas fa-gavel"></i>
+            </div>
+            <h3 class="scheme-title">Law School Bursary</h3>
+            <div class="scheme-amount">
+              ₦300,000 <span>/ Candidate</span>
+            </div>
+            <p class="scheme-desc">
+              Special executive scholarship subsidy disbursed to qualified Kogi State candidates admitted into the Nigerian Law School Bar Part II vocational training program.
+            </p>
+            <ul class="scheme-features">
+              <li class="scheme-feature-item"><i class="fas fa-circle-check"></i> 100% verified Kogi Law School candidates</li>
+              <li class="scheme-feature-item"><i class="fas fa-circle-check"></i> Endorsed by NAKOLSON legal leadership</li>
+              <li class="scheme-feature-item"><i class="fas fa-circle-check"></i> High-impact bar preparation relief</li>
+            </ul>
+            <a href="schemes.html#law-school" class="btn btn-secondary" style="width:100%;">View Requirements</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 PILLARS OF APPLICATION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Simplified Registration</span>
+          <h2 class="section-title">4-Step Application Roadmap</h2>
+          <p class="section-desc">Applying for the Kogi State bursary has been completely digitized for maximum transparency, speed, and fairness.</p>
+        </div>
+
+        <div class="steps-container">
+          <div class="step-card reveal">
+            <div class="step-number">01</div>
+            <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+            <h4 class="step-title">Create Student Profile</h4>
+            <p class="step-desc">Visit scholarshipboard.kogistate.gov.ng and register your account using your active email and official phone number.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <div class="step-number">02</div>
+            <div class="step-icon"><i class="fas fa-id-card"></i></div>
+            <h4 class="step-title">LGA &amp; Indigeneity</h4>
+            <p class="step-desc">Enter your 11-digit NIN and upload your verifiable Local Government Indigene Certificate from your Kogi LGA.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <div class="step-number">03</div>
+            <div class="step-icon"><i class="fas fa-file-arrow-up"></i></div>
+            <h4 class="step-title">Upload Documents</h4>
+            <p class="step-desc">Scan and upload your valid admission letter, school ID card, matriculation number details, and previous semester statement.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <div class="step-number">04</div>
+            <div class="step-icon"><i class="fas fa-building-columns"></i></div>
+            <h4 class="step-title">BVN &amp; Direct Credit</h4>
+            <p class="step-desc">Provide your commercial bank account matching your registered name for direct digital disbursement upon verification.</p>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:3rem;" class="reveal">
+          <a href="application-guide.html" class="btn btn-primary" id="btnFullGuide">
+            <i class="fas fa-book"></i> Read Complete Step-by-Step Guide
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDENT PROJECT SPOTLIGHT / BANNER -->
+    <section class="container" style="margin-bottom: 5rem;">
+      <div style="background:linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius:var(--radius-lg); padding:3rem 2.5rem; color:#FFFFFF; position:relative; overflow:hidden;" class="reveal">
+        <div style="position:relative; z-index:2; max-width:700px;">
+          <span style="background:var(--secondary-gold); color:#121005; font-size:0.75rem; font-weight:800; padding:0.25rem 0.75rem; border-radius:var(--radius-full); text-transform:uppercase; letter-spacing:0.5px;">Student Initiative &amp; Information Desk</span>
+          <h2 style="font-size:2.2rem; margin:1rem 0; color:#FFFFFF; line-height:1.2;">Need Direct Help With Your Application?</h2>
+          <p style="font-size:1.05rem; opacity:0.9; margin-bottom:1.75rem; line-height:1.6;">
+            Have questions regarding document uploads, LGA verification, or portal troubleshooting? Connect directly with our student support liaison, <strong>Nurudeen Shamsiyat Oyiza</strong> (Matric: 2025/HND/SWD/057).
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+            <a href="contact.html" class="btn btn-gold" id="btnContactRep">
+              <i class="fas fa-address-card"></i> Contact Information &amp; Desk
+            </a>
+            <a href="tel:07042446483" class="btn btn-secondary" style="background:#FFFFFF; color:var(--primary);" id="btnCallNow">
+              <i class="fas fa-phone-alt"></i> Call: 07042446483
+            </a>
+          </div>
+        </div>
+        <div style="position:absolute; right:-20px; bottom:-30px; opacity:0.12; font-size:18rem; pointer-events:none;">
+          <i class="fas fa-landmark"></i>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- OFFICIAL SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: About Board -->
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+            <img src="assets/kogi-logo.svg" alt="Kogi Seal" style="width:48px; height:48px;">
+            <div>
+              <div style="font-family:'Outfit', sans-serif; font-size:1.15rem; font-weight:800; color:#FFFFFF;">KOGI STATE BURSARY</div>
+              <div style="font-size:0.75rem; color:var(--secondary-gold-light); text-transform:uppercase; letter-spacing:0.5px;">The Confluence State</div>
+            </div>
+          </div>
+          <p class="footer-brand-desc">
+            The Kogi State Scholarship and Bursary Board is committed to removing financial barriers to quality tertiary education for Kogi youths under the leadership of Governor Ahmed Usman Ododo.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link"><i class="fas fa-chevron-right"></i> Home Portal</a></li>
+            <li><a href="schemes.html" class="footer-link"><i class="fas fa-chevron-right"></i> Bursary Schemes</a></li>
+            <li><a href="application-guide.html" class="footer-link"><i class="fas fa-chevron-right"></i> Application Guide</a></li>
+            <li><a href="contact.html" class="footer-link"><i class="fas fa-chevron-right"></i> Contact &amp; Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Schemes -->
+        <div>
+          <h4 class="footer-heading">Bursary Schemes</h4>
+          <ul class="footer-links">
+            <li><a href="schemes.html#undergraduate" class="footer-link"><i class="fas fa-chevron-right"></i> Undergraduate (₦30k)</a></li>
+            <li><a href="schemes.html#medical" class="footer-link"><i class="fas fa-chevron-right"></i> Medical Students (₦75k)</a></li>
+            <li><a href="schemes.html#law-school" class="footer-link"><i class="fas fa-chevron-right"></i> Law School (₦300k)</a></li>
+            <li><a href="schemes.html#lgas" class="footer-link"><i class="fas fa-chevron-right"></i> 21 LGA Indigene Matrix</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Secretariat -->
+        <div>
+          <h4 class="footer-heading">Contact Information</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-user-check"></i>
+            <div>
+              <strong>Nurudeen Shamsiyat Oyiza</strong><br>
+              <span style="font-size:0.82rem; color:var(--secondary-gold-light);">Matric: 2025/HND/SWD/057</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <span>Direct Phone / WhatsApp:</span><br>
+              <a href="tel:07042446483" style="color:#FFFFFF; font-weight:700;">07042446483</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-location-dot"></i>
+            <div>
+              Kogi State Scholarship Board Secretariat, State Secretariat Complex, Lokoja, Kogi State, Nigeria.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Kogi State Scholarship and Bursary Board (KSSB). All Rights Reserved.
+        </div>
+        <div class="student-credit-pill">
+          Built by <strong style="color:#FFFFFF;">Nurudeen Shamsiyat Oyiza</strong> (2025/HND/SWD/057)
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Engine -->
+  <script src="js/main.js"></script>
+</body>
+</html>

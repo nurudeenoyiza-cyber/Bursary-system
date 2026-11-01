@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="kgGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#006A38" />
+      <stop offset="50%" stop-color="#008751" />
+      <stop offset="100%" stop-color="#004D25" />
+    </linearGradient>
+    <linearGradient id="kgGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD116" />
+      <stop offset="50%" stop-color="#E5A800" />
+      <stop offset="100%" stop-color="#C28700" />
+    </linearGradient>
+    <linearGradient id="kgRiverGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0F7FA" />
+      <stop offset="50%" stop-color="#4DD0E1" />
+      <stop offset="100%" stop-color="#0288D1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Outer Ring with Shadow -->
+  <circle cx="250" cy="250" r="235" fill="#FFFFFF" stroke="#006A38" stroke-width="6" filter="url(#shadow)" />
+  <circle cx="250" cy="250" r="222" fill="url(#kgGreenGrad)" stroke="url(#kgGoldGrad)" stroke-width="4" />
+  
+  <!-- Outer Circular Text Ring Guide -->
+  <path id="topCurve" d="M 65,250 A 185,185 0 1,1 435,250" fill="none" />
+  <path id="bottomCurve" d="M 435,250 A 185,185 0 0,1 65,250" fill="none" />
+
+  <!-- Circular Text -->
+  <text font-family="'Montserrat', 'Arial Black', sans-serif" font-size="22" font-weight="900" fill="#FFFFFF" letter-spacing="3.5">
+    <textPath href="#topCurve" startOffset="50%" text-anchor="middle">
+      KOGI STATE SCHOLARSHIP BOARD
+    </textPath>
+  </text>
+  <text font-family="'Montserrat', 'Arial Black', sans-serif" font-size="19" font-weight="800" fill="#FCD116" letter-spacing="3">
+    <textPath href="#bottomCurve" startOffset="50%" text-anchor="middle">
+      ★ THE CONFLUENCE STATE • EST. 1991 ★
+    </textPath>
+  </text>
+
+  <!-- Inner Circle White Shield Bed -->
+  <circle cx="250" cy="250" r="145" fill="#FFFFFF" stroke="url(#kgGoldGrad)" stroke-width="4" />
+  <circle cx="250" cy="250" r="138" fill="#F4FBF7" stroke="#008751" stroke-width="1.5" stroke-dasharray="4 2" />
+
+  <!-- The Nigerian / Kogi Coat-of-Arms Style Shield -->
+  <g transform="translate(0, 15)">
+    <!-- Base Shield -->
+    <path d="M 195,180 Q 250,170 305,180 Q 315,250 250,305 Q 185,250 195,180 Z" fill="#005A2B" stroke="url(#kgGoldGrad)" stroke-width="3.5" filter="url(#shadow)" />
+
+    <!-- The Y-Shaped River Niger & River Benue Confluence -->
+    <!-- Niger Branch -->
+    <path d="M 210,182 L 235,182 L 250,225 L 250,295 L 240,295 L 240,230 Z" fill="url(#kgRiverGrad)" opacity="0.9" />
+    <!-- Benue Branch -->
+    <path d="M 290,182 L 265,182 L 250,225 L 250,295 L 260,295 L 260,230 Z" fill="url(#kgRiverGrad)" opacity="0.9" />
+    <!-- Flow Ripple Lines -->
+    <path d="M 248,185 Q 242,210 248,235 L 248,290" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.8" />
+    <path d="M 252,185 Q 258,210 252,235 L 252,290" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.8" />
+
+    <!-- Crest Top: Nigerian Eagle & Torse -->
+    <!-- Torse Wreath (Green & White) -->
+    <rect x="220" y="162" width="60" height="10" rx="3" fill="#FFFFFF" stroke="#006A38" stroke-width="1.5" />
+    <rect x="232" y="162" width="12" height="10" fill="#008751" />
+    <rect x="256" y="162" width="12" height="10" fill="#008751" />
+
+    <!-- Majestic Red Eagle / Golden Eagle Silhouette -->
+    <path d="M 250,132 C 243,142 232,148 222,152 C 235,152 244,157 250,162 C 256,157 265,152 278,152 C 268,148 257,142 250,132 Z" fill="#E53935" stroke="#B71C1C" stroke-width="1" />
+    <path d="M 250,130 L 252,145 L 248,145 Z" fill="#FCD116" />
+
+    <!-- Golden Academic Graduation Cap (Symbolizing Scholarship Board) -->
+    <path d="M 250,195 L 275,203 L 250,211 L 225,203 Z" fill="url(#kgGoldGrad)" stroke="#8D6500" stroke-width="1.5" />
+    <path d="M 235,206 L 235,216 Q 250,222 265,216 L 265,206" fill="url(#kgGoldGrad)" stroke="#8D6500" stroke-width="1.5" />
+    <path d="M 270,205 L 276,218" stroke="#FCD116" stroke-width="2" />
+    <circle cx="276" cy="219" r="2" fill="#E5A800" />
+
+    <!-- Supporting Olive / Laurel Leaves on side of shield -->
+    <g fill="#008751" opacity="0.85">
+      <ellipse cx="178" cy="205" rx="10" ry="5" transform="rotate(-30 178 205)" />
+      <ellipse cx="170" cy="225" rx="11" ry="5" transform="rotate(-15 170 225)" />
+      <ellipse cx="170" cy="245" rx="11" ry="5" transform="rotate(10 170 245)" />
+      <ellipse cx="178" cy="265" rx="10" ry="5" transform="rotate(35 178 265)" />
+
+      <ellipse cx="322" cy="205" rx="10" ry="5" transform="rotate(30 322 205)" />
+      <ellipse cx="330" cy="225" rx="11" ry="5" transform="rotate(15 330 225)" />
+      <ellipse cx="330" cy="245" rx="11" ry="5" transform="rotate(-10 330 245)" />
+      <ellipse cx="322" cy="265" rx="10" ry="5" transform="rotate(-35 322 265)" />
+    </g>
+
+    <!-- Golden Scroll Banner at Bottom -->
+    <path d="M 170,305 Q 250,295 330,305 Q 345,325 320,328 Q 250,315 180,328 Q 155,325 170,305 Z" fill="url(#kgGoldGrad)" stroke="#9E6E00" stroke-width="2" filter="url(#shadow)" />
+    <text x="250" y="321" font-family="'Montserrat', 'Arial', sans-serif" font-size="10.5" font-weight="900" fill="#1B381E" text-anchor="middle" letter-spacing="1">
+      UNITY &amp; SCHOLARSHIP
+    </text>
+  </g>
+</svg>
