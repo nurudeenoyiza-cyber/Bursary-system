@@ -73,6 +73,14 @@ function initNavigation() {
   const mobileToggle = document.getElementById('mobileNavToggle');
   const navMenu = document.getElementById('navMenu');
 
+  // Create backdrop element if it doesn't exist
+  let backdrop = document.querySelector('.nav-backdrop');
+  if (!backdrop) {
+    backdrop = document.createElement('div');
+    backdrop.className = 'nav-backdrop';
+    document.body.appendChild(backdrop);
+  }
+
   // Sticky header class on scroll
   window.addEventListener('scroll', () => {
     if (window.scrollY > 30) {
@@ -82,23 +90,54 @@ function initNavigation() {
     }
   });
 
-  // Mobile menu toggle
+  function closeMenu() {
+    navMenu?.classList.remove('open');
+    backdrop?.classList.remove('show');
+    document.body.classList.remove('nav-open');
+    const icon = mobileToggle?.querySelector('i');
+    if (icon) icon.className = 'fas fa-bars';
+  }
+
+  function openMenu() {
+    navMenu?.classList.add('open');
+    backdrop?.classList.add('show');
+    document.body.classList.add('nav-open');
+    const icon = mobileToggle?.querySelector('i');
+    if (icon) icon.className = 'fas fa-times';
+  }
+
   if (mobileToggle && navMenu) {
-    mobileToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
       const isOpen = navMenu.classList.contains('open');
-      const icon = mobileToggle.querySelector('i');
-      if (icon) {
-        icon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
       }
     });
 
-    // Close when clicking outside or clicking a nav link
-    document.addEventListener('click', (e) => {
-      if (!navMenu.contains(e.target) && !mobileToggle.contains(e.target) && navMenu.classList.contains('open')) {
-        navMenu.classList.remove('open');
-        const icon = mobileToggle.querySelector('i');
-        if (icon) icon.className = 'fas fa-bars';
+    // Close when tapping the backdrop
+    backdrop.addEventListener('click', closeMenu);
+
+    // Close when clicking any nav link or action button inside menu
+    navMenu.querySelectorAll('.nav-link, .btn').forEach(link => {
+      link.addEventListener('click', () => {
+        closeMenu();
+      });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        closeMenu();
+      }
+    });
+
+    // Auto-close on resize back to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1080 && navMenu.classList.contains('open')) {
+        closeMenu();
       }
     });
   }
